@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 80px;
+}
+.containernav{
+    width: 90%;
+    /* background-color: greenyellow; */
+    display: flex;
+    padding: 10px;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 209, 201);
+}
+.lefcontent{
+    padding: 5px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 400px;
+}
+.lefcontent .logo{
+    margin-left: 20px;
+}
+.listlink{
+    /* background-color: blue; */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.listlink li{
+    margin-left: 20px;
+
+}
+.listlink li a{
+    color:rgb(196 197 198);
+}
+
+.rigcontent{
+/* background-color: blanchedalmond; */
+padding: 5px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+ 
+.rigcontent .shop{
+     font-size: 26px;
+    font-weight: 700;
+}
+.cercl{
+    width: 50px; 
+     height: 50px;
+     margin-left:20px;
+}
+/* home */
+.container{
+ height: 100vh;
+ 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.contenthome{
+    width: 90%;
+    height: 95vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    width: 48%;
+    height: 85vh;
+  
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.lefthome .product{
+    align-items: center;
+ 
+    padding: 20px;
+}
+
+.lefthome .product img{
+    width: 350px;
+    height: 350px; 
+    border-radius:5px;
+}
+.lefthome .sous-product{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+   
+
+}
+
+.lefthome .sous-product img{
+    width: 60px;
+    height: 60px; 
+    border-radius:5px;
+}
+
+.rigthhome .description{
+ 
+ padding: 20px;
+ width: 70%;
+}
+.rigthhome .description h4{
+    font-size: 16px;
+    color: rgb(255 126 27);
+    line-height: 25px;
+
+}
+.rigthhome .description p{
+    color: rgb(139, 142, 145);
+    margin: 20px 0px;
+}
+.rigthhome .description .calc{
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+.rigthhome .description .calc button{
+   padding: 10px; 
+   border: none;
+   width: 150px;
+   background-color:rgb(255 126 27) ;
+   border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+     font-size: 11px;
+      text-align: center; 
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
