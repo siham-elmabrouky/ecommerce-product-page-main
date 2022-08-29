@@ -12,6 +12,8 @@ a{
     text-decoration: none;
 }
 .navbar{
+    position: absolute;
+    
     background-color: #fff;
     display: flex;
     justify-content:  center;
@@ -75,24 +77,24 @@ align-items: center;
 }
 /* home */
 .container{
- height: 100vh;
+ height: auto;
  
  display: flex;
  align-items: center;
  justify-content: center;
 }
 .contenthome{
-    width: 90%;
+    width: 95%;
     height: 95vh;
-   
+ 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .home{
-    width: 48%;
+    width: 60%;
     height: 85vh;
-  
+ 
     margin: 5px;
     align-items: center;
     justify-content: center;
@@ -102,12 +104,12 @@ align-items: center;
 .lefthome .product{
     align-items: center;
  
-    padding: 20px;
+ 
 }
 
 .lefthome .product img{
-    width: 350px;
-    height: 350px; 
+    width: 400px;
+    height: 400px; 
     border-radius:5px;
 }
 .lefthome .sous-product{
@@ -127,9 +129,11 @@ align-items: center;
 }
 
 .rigthhome .description{
- 
+  
  padding: 20px;
- width: 70%;
+ /* width: 400px; */
+ width: 65%;
+ 
 }
 .rigthhome .description h4{
     font-size: 16px;
@@ -141,19 +145,115 @@ align-items: center;
     color: rgb(139, 142, 145);
     margin: 20px 0px;
 }
+
+.rigthhome .description .price{
+font-size: 26px;
+font-weight: 800;
+}
+.rigthhome .description .porsantage{
+    font-size: 19px;
+    font-weight: 800;
+    background:  rgb(240, 197, 165);
+ border-radius: 5px;
+margin: 5px;
+    }
 .rigthhome .description .calc{
-    
+ 
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-between;
     padding: 10px;
 }
+.rigthhome .description .calc p{
+    background: rgb(236, 226, 226);
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+.rigthhome .description .calc p .mins,
+.rigthhome .description .calc p .plus{
+    color:  rgb(255 126 27);
+    font-size: 26px;
+    font-weight: bold;
+}
 .rigthhome .description .calc button{
    padding: 10px; 
    border: none;
-   width: 150px;
+   width: 45%;
    background-color:rgb(255 126 27) ;
    border-radius: 5px;
+}
+/* navbar mobile */
+i.menu{
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+
+} 
+.listlink .menu1{
+    display: none;
+    font-size: 30px;
+    font-weight:  1000;
+ 
+ 
+}
+@media screen and (max-width : 750px) {
+.navbar{
+
+}
+.navbar .lefcontent{
+   
+    justify-content: flex-start;
+}
+.listlink{
+    display: none;
+    background-color:#fff;
+   flex-direction: column;
+   position: absolute;
+   height: 100vh;
+   top: 0;
+   left: 0;
+   width:70%;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 20px;
+   line-height: 50px;
+
+}
+.listlink li a{
+    color: black;
+    font-weight:  700;
+    text-transform: capitalize;
+}
+ .listlink .menu1{
+    display: block;
+  margin-left: 22px;
+    font-weight:  900;
+
+}
+i.menu{
+    display: block;
+}
+  .container{
+    flex-direction: column;
+   
+   } 
+  .container .contenthome{
+    flex-direction: column;
+      
+    
+    
+  }
+  .container .contenthome .lefthome{
+ 
+width: 100%;
+  }
+ 
+ 
 }
 
 
