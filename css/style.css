@@ -187,7 +187,7 @@ margin: 5px;
    border-radius: 5px;
 }
 /* cart form */
-.cart {
+.notification {
     background-color:rgb(255 126 27) ;
     width: 20px;
     color: #fff;
@@ -202,6 +202,7 @@ margin: 5px;
     display: none;
 }
 .cartcontent{
+    display: none;
     position: absolute;
     top: 100px;
     right: 50px;
@@ -235,6 +236,12 @@ margin: 5px;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+}
+.cartcontent .notempty img{
+    width: 50px;
+}
+.cartcontent .notempty .yourpric p{
+    display: block;
 }
 .cartcontent .checkout{
     width: 90%;
