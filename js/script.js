@@ -1,4 +1,9 @@
 // varaibles sitting
+//price
+let price = document.querySelector(".price");
+let nbPrice = parseFloat(price.innerText);
+console.log(nbPrice);
+
 // calc
 let mins = document.querySelector('.mins');
 let plus = document.querySelector('.plus');
@@ -12,6 +17,7 @@ let notification = document.querySelector('.notification')
 let ntf = parseInt(notification.innerText);
 //add to cart
 let addtocard = document.querySelector('.addtocard');
+
 addtocard.onclick = function(){
 
     notification.style.display='block';  

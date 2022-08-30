@@ -145,7 +145,8 @@ align-items: center;
     margin: 20px 0px;
 }
 
-.rigthhome .description .price{
+.rigthhome .description .price ,
+.rigthhome .description .dolar{
 font-size: 26px;
 font-weight: 800;
 }
