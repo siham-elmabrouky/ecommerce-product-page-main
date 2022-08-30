@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 .navbar{
-    position: absolute;
+    /* position: absolute; */
     
     background-color: #fff;
     display: flex;
@@ -85,8 +85,7 @@ align-items: center;
 }
 .contenthome{
     width: 95%;
-    height: 95vh;
- 
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,9 +200,13 @@ i.menu{
  
  
 }
-@media screen and (max-width : 750px) {
+section{
+    height: auto;
+}
+@media screen and (max-width : 800px) {
 .navbar{
-
+ 
+ 
 }
 .navbar .lefcontent{
    
@@ -240,6 +243,7 @@ i.menu{
 }
   .container{
     flex-direction: column;
+    background-attachment: red;
    
    } 
   .container .contenthome{
@@ -248,10 +252,34 @@ i.menu{
     
     
   }
-  .container .contenthome .lefthome{
+.home .product{
+    
+    width: 100%;
+    height: 100%;
+}
+ .home .product .P1{
+    width: 100%;
+    height: 100%;
+}
+.product .sous-product{
+    display: none;
+}
+  .container .contenthome .lefthome,
+  .container .contenthome .rigthhome
+  {
  
 width: 100%;
   }
+  .rigthhome .description .calc{
+    
+  display: block;
+  align-items: center;
+  }
+  .rigthhome .description .calc p ,
+.rigthhome .description .calc button{
+    width: 100%;
+}
+
  
  
 }
