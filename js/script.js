@@ -2,7 +2,9 @@
 //price
 let price = document.querySelector(".price");
 let nbPrice = parseFloat(price.innerText);
-console.log(nbPrice);
+
+ 
+// console.log(nbPrice);
 
 // calc
 let mins = document.querySelector('.mins');
@@ -17,12 +19,20 @@ let notification = document.querySelector('.notification')
 let ntf = parseInt(notification.innerText);
 //add to cart
 let addtocard = document.querySelector('.addtocard');
+//total price 
+ function calcprice(a,b)
+ {
+    let p = a*b;
+    console.log(p);
+ }
+ calcprice(nbPrice,ntf);
 
 addtocard.onclick = function(){
 
     notification.style.display='block';  
     ntf = nb;
     notification.innerHTML = ntf;
+    
 
 }
 
@@ -90,7 +100,7 @@ btn.onclick = function()
                 p1.appendChild(p1text);
     
                 let p2 = document.createElement("p");
-                let p2text =document.createTextNode('aaaaaaaaaaaaa');
+                let p2text =document.createTextNode(`${nbPrice} x ${ntf} $ ${p}}`);
                 p2.appendChild(p2text);  
     
                 yourpric.appendChild(p1);
