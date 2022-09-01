@@ -23,11 +23,16 @@ let addtocard = document.querySelector('.addtocard');
  
 
 addtocard.onclick = function(){
-
-    notification.style.display='block';  
+ 
+  if(nb !==0){
     ntf = nb;
     notification.innerHTML = ntf;
-    
+ 
+    notification.style.display='block';  
+  }
+ 
+ 
+ 
 
 }
 
@@ -55,6 +60,7 @@ btn.onclick = function()
 {
     ///empty
     if(ntf === 0){
+  
         cartcontainer.style.display='block'
         let cart1 = document.createElement("span");
         let cart1text = document.createTextNode('cart');
@@ -158,5 +164,7 @@ img3.onclick = function(){
 img4.onclick = function(){
     mainimg.src ='images/image-product-4.jpg';
 }
+// slide for version mobile
+
 
 
