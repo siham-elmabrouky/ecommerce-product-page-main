@@ -262,6 +262,11 @@ bottom: 20px;
 
 /* chat */
 
+/* slide img */
+.container .contenthome .home .product i{
+    display: none;
+}
+ 
 /* navbar mobile */
 i.menu{
     display: none;
@@ -274,7 +279,7 @@ i.menu{
     font-size: 30px;
     font-weight:  1000;
     cursor: pointer;
-    
+
  
 }
 section{
@@ -327,17 +332,20 @@ i.menu{
 .container{
     flex-direction: column;
      width: 100%;
-    
+ 
    
    } 
   .container .contenthome{
     flex-direction: column;
        width: 100%;
+     
     
     
   }
+ 
+  
 .home .product{
-    
+    width: auto;
     width: 100%;
     height: 100%;
 }
@@ -363,8 +371,26 @@ width: 100%;
 .rigthhome .description .calc button{
     width: 100%;
 }
+.container .contenthome .home .product i{
+    display: block;
+    position: absolute;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container .contenthome .home .product i.next{
+ left: 20px;
+top: 50%;
 
+}
+.container .contenthome .home .product i.pre{
+
+    bottom: 46%;
+    right: 20px;
  
+}
+
  
 }
 
