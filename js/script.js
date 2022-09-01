@@ -20,12 +20,7 @@ let ntf = parseInt(notification.innerText);
 //add to cart
 let addtocard = document.querySelector('.addtocard');
 //total price 
- function calcprice(a,b)
- {
-    let p = a*b;
-    console.log(p);
- }
- calcprice(nbPrice,ntf);
+ 
 
 addtocard.onclick = function(){
 
@@ -74,6 +69,7 @@ btn.onclick = function()
 
         cartcontainer.appendChild(cart1);
         cartcontainer.appendChild(pempty);
+       
 
     }else{
 
@@ -100,7 +96,7 @@ btn.onclick = function()
                 p1.appendChild(p1text);
     
                 let p2 = document.createElement("p");
-                let p2text =document.createTextNode(`${nbPrice} x ${ntf} $ ${p}}`);
+                let p2text =document.createTextNode(`${nbPrice} x ${ntf}`);
                 p2.appendChild(p2text);  
     
                 yourpric.appendChild(p1);
@@ -128,3 +124,20 @@ btn.onclick = function()
 
    
 }
+// lin lsit
+let menu = document.querySelector('.menu');
+let menu1 = document.querySelector('.menu1');
+let listlink = document.querySelector('.listlink');
+menu.onclick= function(){
+   menu.style.display='block'
+    listlink.style.display='block'
+   menu1.style.display='block'  
+
+};
+menu1.onclick= function(){
+    menu.style.display='block'
+     listlink.style.display='none'
+    menu1.style.display='none'  
+ 
+ };
+
