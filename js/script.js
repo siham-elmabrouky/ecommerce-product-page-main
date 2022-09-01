@@ -140,4 +140,23 @@ menu1.onclick= function(){
     menu1.style.display='none'  
  
  };
+//  change src img 
+let mainimg = document.querySelector('.mainimg');
+let img1 = document.querySelector('.img1');
+let img2 = document.querySelector('.img2');
+let img3 = document.querySelector('.img3');
+let img4 = document.querySelector('.img4');
+img1.onclick = function(){
+    mainimg.src ='images/image-product-1.jpg';
+}
+img2.onclick = function(){
+    mainimg.src ='images/image-product-2.jpg';
+}
+img3.onclick = function(){
+    mainimg.src ='images/image-product-3.jpg';
+}
+img4.onclick = function(){
+    mainimg.src ='images/image-product-4.jpg';
+}
+
 
