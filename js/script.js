@@ -85,7 +85,17 @@ img4.onclick = function(){
 }
 
 // slide for version mobile
+let slide = new Array("images/image-product-1.jpg", "images/image-product-2.jpg", "images/image-product-3.jpg", "images/image-product-4.jpg");
+let numero = 0;
 
+function ChangeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0)
+        numero = slide.length - 1;
+    if (numero > slide.length - 1)
+        numero = 0;
+    document.getElementById("slide").src = slide[numero];
+}
 
 
 

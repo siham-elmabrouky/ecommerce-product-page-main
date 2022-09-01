@@ -371,24 +371,42 @@ width: 100%;
 .rigthhome .description .calc button{
     width: 100%;
 }
+.container .contenthome .home .product .nextpre{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+
+}
 .container .contenthome .home .product i{
     display: block;
-    position: absolute;
+  position: absolute;
     padding: 15px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.966);
     border-radius: 50%;
     cursor: pointer;
+    font-weight: 600;
 }
 .container .contenthome .home .product i.next{
  left: 20px;
-top: 50%;
+ 
 
 }
 .container .contenthome .home .product i.pre{
-
-    bottom: 46%;
     right: 20px;
  
+}
+.cartcontent{
+    position: absolute;
+    top: 100px;
+  right: 5px;
+  width: 710px;
+  height: 450px;
+  background-color:  #fff;
+  border-radius: 5px;
+  box-shadow: none;
 }
 
  
