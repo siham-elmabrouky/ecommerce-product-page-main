@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | E-commerce product page</title>
 
   <link rel="stylesheet" href="css/style.css">
   <!-- google fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+
 </head>
+
 <body>
- <nav class="navbar">
-<div class="containernav">
+  <nav class="navbar">
+    <div class="containernav container">
 
-  <div class="lefcontent">
-    
-     <i class="fa fa-bars menu" aria-hidden="true"></i>
-     <h1 class="logo">sneakers</h1>
-  <ul class="listlink">
-    <span class="menu1">X</span>
-    <li><a href="">collections</a></li>
-    <li><a href="">men</a></li>
-    <li><a href="">women</a></li>
-    <li><a href="">about</a></li>
-    <li><a href="">contact</a></li>
-  </ul>
-  </div>
+      <div class="lefcontent">
 
-  <div class="rigcontent">
-    <i class="fa fa-shopping-cart shop btn" aria-hidden="true"></i> <span class="notification">0</span>
-    <img src="images/image-avatar.png" alt="" class="cercl"><span class="chat"></span>
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
+        <h1 class="logo">sneakers</h1>
+        <ul class="listlink">
+          <span class="menu1">X</span>
+          <li><a href="">collections</a></li>
+          <li><a href="">men</a></li>
+          <li><a href="">women</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </div>
 
-    <div class="cartcontent">
-     
-      <!-- <span class="cart1">Cart</span> -->
- 
-    <!-- <p class="empty">your cart empty</p>
+      <div class="rigcontent">
+        <i class="fa fa-shopping-cart shop btn" aria-hidden="true"></i> <span class="notification">0</span>
+        <img src="images/image-avatar.png" alt="" class="cercl"><span class="chat"></span>
+
+        <div class="cartcontent">
+
+          <!-- <span class="cart1">Cart</span> -->
+
+          <!-- <p class="empty">your cart empty</p>
       <div class="notempty">
               <div class="imag">  <img src="images/image-product-1.jpg" alt="" style="width: 50px;">
               </div>
@@ -52,24 +55,24 @@
               </div>
               <button class="checkout">checkout</button>
       </div> -->
-     
-    </div>
-  </div>
-  
-</div>
- </nav>
- <section>
- 
-  <div class="container">
-    <div class="contenthome">
-      <div class="lefthome home">
-            <div class="product">
-              <div class="nextpre">
-                <i class="fa fa-chevron-left next" aria-hidden="true" onclick="ChangeSlide(-1)"></i>
-                <i class="fa fa-chevron-right pre" aria-hidden="true" onclick="ChangeSlide(1)"></i>
 
-              </div>
-              <img src="images/image-product-1.jpg" alt="" class="P1 mainimg" id="slide">
+        </div>
+      </div>
+
+    </div>
+  </nav>
+  <section>
+
+    <div class="container">
+      <div class="contenthome">
+        <div class="lefthome home">
+          <div class="product">
+            <div class="nextpre">
+              <i class="fa fa-chevron-left next" aria-hidden="true" onclick="ChangeSlide(-1)"></i>
+              <i class="fa fa-chevron-right pre" aria-hidden="true" onclick="ChangeSlide(1)"></i>
+
+            </div>
+            <img src="images/image-product-1.jpg" alt="" class="P1 mainimg" id="slide">
 
             <div class="sous-product">
               <img src="images/image-product-1.jpg" alt="" class="img1">
@@ -78,38 +81,39 @@
               <img src="images/image-product-4.jpg" alt="" class="img4">
             </div>
           </div>
-      </div>
-      <div class="rigthhome home">
-        <div class="description">
-   
-          <h4>SNEAKER COMPANY</h4>
-
-          <h1>Fall Limited edition sneakers</h1>
-  <p>these low-profile sneakers are your perfect 
-    casual wear companion. featuring a durable rubber outer sole , 
-    they'll withstandd everything the weather can offer</p>
-    <span class="dolar">$</span><span class="price">125.00</span> <span class="porsantage">50%</span>
-    <P>SSSSS</P>
-    <div class="calc">
-      <p><span class="mins">-</span> <span class="zero">0</span> <span class="plus">+</span></p>
-  <button class="addtocard">    <i class="fa fa-shopping-cart shop" aria-hidden="true"></i> 
-    add to cart</button>
-    </div>
         </div>
-  
+        <div class="rigthhome home">
+          <div class="description">
+
+            <h4>SNEAKER COMPANY</h4>
+
+            <h1>Fall Limited edition sneakers</h1>
+            <p>these low-profile sneakers are your perfect
+              casual wear companion. featuring a durable rubber outer sole ,
+              they'll withstandd everything the weather can offer</p>
+            <span class="dolar">$</span><span class="price">125.00</span> <span class="porsantage">50%</span>
+            <p class="decoration">250.00$</p>
+            <div class="calc">
+              <p><span class="mins">-</span> <span class="zero">0</span> <span class="plus">+</span></p>
+              <button class="addtocard"> <i class="fa fa-shopping-cart shop" aria-hidden="true"></i>
+                add to cart</button>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
-  
-  </div>
- </section>
+  </section>
 
 
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#"> dev siham</a>.
   </div>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
